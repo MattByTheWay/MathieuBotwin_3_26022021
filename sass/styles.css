@@ -35,9 +35,10 @@ a {
     font-weight: bold; }
   .Reservation__Text {
     padding-bottom: 5%;
-    width: 98%; }
+    width: 74%;
+    padding-left: 12%; }
   .Reservation__Btn {
-    padding: 4%;
+    padding: 3%;
     border: 1px solid #ffc3ee;
     border-radius: 25px;
     box-shadow: 0 0 15px #0000002e;
@@ -47,7 +48,8 @@ a {
 .Signature__Box {
   padding-bottom: 5%; }
   .Signature__Box--Title {
-    padding-left: 5%; }
+    padding-left: 5%;
+    margin-bottom: 0; }
   .Signature__Box--Number {
     position: absolute;
     border: 1px solid #9356DC;
@@ -64,17 +66,22 @@ a {
   align-items: center; }
   .Signature__Order--Step {
     display: flex;
-    margin-top: 7%;
+    margin-top: 5%;
     text-align: center;
     align-items: center;
-    height: 65px;
+    height: 75px;
     width: 85%;
     border: 1px solid #e9e9e9;
-    background: #f1f1f1;
+    background-color: #f1f1f1;
     border-radius: 25px;
-    box-shadow: 0 0 8px #0000002e;
+    box-shadow: 0 0 13px #0000002e;
     color: black;
     position: relative; }
+  .Signature__Order :hover {
+    background-color: #f5edff;
+    cursor: pointer; }
+    .Signature__Order :hover i {
+      color: #8b48dd; }
   .Signature__Order--icon {
     padding-left: 12%; }
 
@@ -125,19 +132,24 @@ a {
       padding-left: 10%;
       width: 100%;
       color: black; }
-    .Result__Card--FullLike {
+  .Result__Btn {
+    position: absolute;
+    right: 50px;
+    color: #414141;
+    padding-top: 5%; }
+    .Result__Btn :hover {
+      cursor: pointer;
+      opacity: 1;
+      color: #FF79DA; }
+    .Result__Btn--FullLike {
       position: absolute;
-      right: 50px;
       color: #414141;
-      padding-top: 5%; }
-    .Result__Card--Like {
+      right: 0; }
+    .Result__Btn--Like {
       opacity: 0;
       position: absolute;
-      right: 50px;
-      padding-top: 5%;
+      right: 0;
       color: #FF79DA; }
-      .Result__Card--Like :hover {
-        opacity: 1; }
 
 .Footer {
   background-color: #3c3838;
