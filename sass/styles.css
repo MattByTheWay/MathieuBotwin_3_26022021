@@ -26,18 +26,6 @@
     opacity: 1;
     margin-top: 0; } }
 
-@keyframes hoverconfirmation {
-  from {
-    transform: translateX(0);
-    width: 0; }
-  to {
-    overflow: hidden;
-    transform: translateX(-100%);
-    transition: all 800ms;
-    min-width: 20%;
-    width: 20%;
-    background-image: linear-gradient(to left, #7ed8c6, #7ed8c6); } }
-
 body {
   margin: 0;
   font-family: 'Roboto';
@@ -287,7 +275,7 @@ a {
     display: flex; }
   .Menu__title {
     margin-left: 10%;
-    margin-top: 5%;
+    margin-top: 4%;
     font-family: 'Shrikhand';
     font-size: 30px; }
   .Menu__button {
@@ -322,32 +310,36 @@ a {
     margin-top: 0;
     white-space: nowrap;
     transform-origin: right;
-    transition: all 600ms;
     overflow: hidden;
     box-shadow: 0 0 8px #0000002e; }
     .Content__dishes--text {
       margin-left: 4%;
       height: 100%;
       font-size: 18px;
-      width: 90%; }
+      width: 100%; }
     .Content__dishes--title {
       margin-bottom: 0;
       text-overflow: ellipsis;
       overflow: hidden;
-      width: 90%;
+      width: 100%;
+      transition: all 800ms;
       white-space: nowrap; }
     .Content__dishes--description {
       text-overflow: ellipsis;
       white-space: nowrap;
-      width: 90%;
+      width: 100%;
+      transition: all 800ms;
       overflow: hidden;
       margin: 0; }
     .Content__dishes--price {
-      bottom: -17px;
-      right: 30px;
+      bottom: -46px;
+      right: -30px;
       position: relative;
+      display: flex;
+      width: 0%;
+      transition: all 800ms;
       font-weight: bold;
-      width: 6%; }
+      height: 100%; }
     .Content__dishes--icon {
       border: 2px solid white;
       background-color: white;
@@ -360,22 +352,15 @@ a {
     .Content__dishes--check {
       color: #7ed8c6; }
     .Content__dishes--confirmation {
-      visibility: hidden;
-      color: white;
-      border-color: white;
-      background-color: transparent;
-      background-size: 0 100%;
-      background-image: linear-gradient(to right, #7ed8c6, #7ed8c6);
-      transition: transform 600ms ease-out;
-      transform-origin: right;
-      width: 0;
-      right: -92px;
-      position: relative;
-      display: flex;
-      transform: translateX(0);
-      align-items: center;
       height: 100%;
-      justify-content: center; }
+      min-width: 20%;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      right: -95px;
+      transition: all 800ms;
+      display: flex;
+      background-color: #7ed8c6; }
     .Content__dishes :hover {
       cursor: pointer; }
   .Content__border {
@@ -404,14 +389,17 @@ a {
       border: 1px solid #f0bae1;
       box-shadow: 0 0 20px #0000002e; }
 
+.Content__dishes:hover .Content__dishes--title {
+  width: 87%; }
+
+.Content__dishes:hover .Content__dishes--description {
+  width: 87%; }
+
+.Content__dishes:hover .Content__dishes--price {
+  right: 40px; }
+
 .Content__dishes:hover .Content__dishes--confirmation {
-  visibility: visible;
-  background-image: linear-gradient(to left, #7ed8c6, #7ed8c6);
-  background-size: 100% 100%;
-  overflow: hidden;
-  animation: hoverconfirmation 800ms ease-in-out forwards;
-  min-width: 20%;
-  width: 20%; }
+  right: 0; }
   .Content__dishes:hover .Content__dishes--confirmation .Content__dishes--icon {
     visibility: visible;
     transform: rotate(-360deg);
