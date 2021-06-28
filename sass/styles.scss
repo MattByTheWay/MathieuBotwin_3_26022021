@@ -515,7 +515,7 @@ a {
   }
 }
 //* RESPONSIVE MOBILE *//
-@media screen and (max-width: 732px) {
+@media screen and (max-width: 414px) {
 
   body {
     width: unset;
@@ -533,11 +533,36 @@ a {
   .Result__Btn {
     right: 22px;
   }
-}
-//* Pages *//
 
+//* Pages *//
+ .Header__logo {
+  margin-left: 15%;
+ }
+ .Menu__title {
+  margin-left: 10%;
+  margin-top: 4%;
+  font-size: 27px;
+ }
+ .Result__Btn {
+  right: 35px;
+ }
+ .Content__dishes--text {
+  font-size: 13px;
+ }
+ .Content__dishes--title {
+  margin-top: 10%;
+ }
+ .Content__dishes--price {
+  font-size: 16px;
+  bottom: -33px;
+  right: -30px;
+ }
+ .Content__dishes--confirmation {
+  min-width: 25%;
+ }
+}
 //* RESPONSIVE TABLETTES *//
-@media screen and (min-width: 734px) and (max-width: 1360px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   body {
     width: unset;
   }
@@ -567,5 +592,36 @@ a {
   }
   .Result__Card--New {
     top: -15px;
+  }
+  //* Pages *//
+  .Header__logo {
+    margin-left: 26%;
+    font-size: 230%;
+  }
+  .Menu__title {
+    font-size: 31px;
+  }
+  .Content__title {
+    font-size: 30px;
+    margin-bottom: 4%;
+  }
+  .Content__dishes--title {
+    margin-top: 3%;
+  }
+  .Content__dishes--text {
+    font-size: 20px;
+  }
+  .Content__dishes--price {
+    font-size: 23px;
+    bottom: -30px;
+    right: -40px;
+    width: unset;
+  }
+  .Content__dishes--confirmation {
+    min-width: 12%;
+  }
+  .Command__button {
+    padding: 3%;
+    font-size: 21px;
   }
 }

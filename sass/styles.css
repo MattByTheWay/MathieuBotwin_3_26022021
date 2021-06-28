@@ -417,3 +417,75 @@ a {
   .dishes--4 {
     opacity: 0;
     animation: transition 1600ms ease-in-out forwards; }
+
+@media screen and (max-width: 414px) {
+  body {
+    width: unset; }
+  .Signature__Box--Number {
+    border-radius: 40px;
+    width: 6%; }
+  .Result__Btn {
+    right: 22px; }
+  .Header__logo {
+    margin-left: 15%; }
+  .Menu__title {
+    margin-left: 10%;
+    margin-top: 4%;
+    font-size: 27px; }
+  .Result__Btn {
+    right: 35px; }
+  .Content__dishes--text {
+    font-size: 13px; }
+  .Content__dishes--title {
+    margin-top: 10%; }
+  .Content__dishes--price {
+    font-size: 16px;
+    bottom: -33px;
+    right: -30px; }
+  .Content__dishes--confirmation {
+    min-width: 25%; } }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    width: unset; }
+  .Header__Logo--img {
+    width: 35%; }
+  .Localisation {
+    padding-left: 40%; }
+  .Reservation {
+    padding: 1% 0% 4% 0%; }
+  .Reservation__Btn {
+    padding: 2%;
+    border-radius: 30px; }
+  .Signature__Order--Step {
+    height: 80px;
+    width: 75%; }
+  .Signature__Box--Number {
+    width: 3%;
+    left: -2%; }
+  .Footer {
+    height: 251px; }
+  .Result__Card--New {
+    top: -15px; }
+  .Header__logo {
+    margin-left: 26%;
+    font-size: 230%; }
+  .Menu__title {
+    font-size: 31px; }
+  .Content__title {
+    font-size: 30px;
+    margin-bottom: 4%; }
+  .Content__dishes--title {
+    margin-top: 3%; }
+  .Content__dishes--text {
+    font-size: 20px; }
+  .Content__dishes--price {
+    font-size: 23px;
+    bottom: -30px;
+    right: -40px;
+    width: unset; }
+  .Content__dishes--confirmation {
+    min-width: 12%; }
+  .Command__button {
+    padding: 3%;
+    font-size: 21px; } }
