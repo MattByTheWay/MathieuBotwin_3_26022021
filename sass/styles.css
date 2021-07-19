@@ -445,7 +445,7 @@ a {
   .Content__dishes--confirmation {
     min-width: 25%; } }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 650px) {
   body {
     width: unset; }
   .Header__Logo--img {
@@ -481,7 +481,7 @@ a {
     font-size: 20px; }
   .Content__dishes--price {
     font-size: 23px;
-    bottom: -30px;
+    bottom: -35%;
     right: -40px;
     width: unset; }
   .Content__dishes--confirmation {
@@ -489,3 +489,46 @@ a {
   .Command__button {
     padding: 3%;
     font-size: 21px; } }
+
+@media screen and (min-width: 1023px) {
+  .Content__dishes--confirmation {
+    right: -112px; }
+  .Content__dishes--icon {
+    width: 24%; }
+  .Content__dishes {
+    height: 92px; }
+  .Menu {
+    margin-bottom: -11%; }
+  .Header__logo {
+    margin-left: 30%; } }
+
+@media screen and (min-width: 1350px) {
+  .Content__dishes--confirmation {
+    right: -189px; }
+  .Content__dishes--confirmation {
+    min-width: 9%; }
+  .Content__dishes {
+    height: 103px; }
+  .Footer {
+    height: 288px; }
+  .Header__logo {
+    margin-left: 35%; }
+  .Content__dishes--price {
+    bottom: -40px; } }
+
+@media screen and (min-width: 1400px) {
+  body {
+    margin: 0;
+    font-family: 'Roboto';
+    margin: auto;
+    width: 800px; }
+  .Header__logo {
+    margin-left: 28%; }
+  .Content__dishes--confirmation {
+    min-width: 17%; }
+  .Content__dishes--text {
+    font-size: 26px; }
+  .Content__dishes {
+    height: 110px; }
+  .Content__dishes--title {
+    margin-top: 4%; } }
