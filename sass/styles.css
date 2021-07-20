@@ -539,4 +539,6 @@ a {
   .Content__dishes {
     height: 110px; }
   .Content__dishes--title {
-    margin-top: 4%; } }
+    margin-top: 4%; }
+  .loader__box {
+    width: 800px; } }
