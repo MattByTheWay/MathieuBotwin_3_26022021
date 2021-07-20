@@ -74,7 +74,7 @@ a {
   &__box {
     z-index: 1;
     position: absolute;
-    width: 500px;
+    width: 800px;
     height: 2400px;
     background-color: #dadada;
     opacity: 0.9;
@@ -560,6 +560,9 @@ a {
  .Content__dishes--confirmation {
   min-width: 25%;
  }
+ .loader__box {
+  width: 414px;
+ }
 }
 //* RESPONSIVE TABLETTES *//
 @media screen and (min-width: 650px) {
@@ -625,6 +628,9 @@ a {
     padding: 3%;
     font-size: 21px;
   }
+  .loader__box {
+    width: 770px;
+  }
 }
 @media screen and (min-width: 1023px) {
   .Content__dishes--confirmation {
@@ -641,6 +647,9 @@ a {
   }
   .Header__logo {
     margin-left: 30%;
+  }
+  .loader__box {
+    width: 1200px;
   }
 } 
 @media screen and (min-width: 1350px) {
@@ -662,6 +671,9 @@ a {
   }
   .Content__dishes--price {
     bottom: -40px;
+  }
+  .loader__box {
+    width: 1350px;
   }
 } 
 @media screen and (min-width: 1400px) {
