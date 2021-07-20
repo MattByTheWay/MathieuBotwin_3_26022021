@@ -289,8 +289,7 @@ a {
       opacity: 0; }
 
 .Content {
-  margin-left: 4%;
-  display: flex; }
+  margin-left: 4%; }
   .Content__box {
     width: 100%; }
   .Content__title {
